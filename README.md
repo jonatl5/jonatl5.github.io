@@ -1,34 +1,24 @@
-# jonatl5.github.io
+# 田朵朵 · 个人作品与履历
 
-个人简历与作品集网站，使用 GitHub Pages 托管。
+网站：<https://jonatl5.github.io/>
 
-- 网站：<https://jonatl5.github.io/>
-- 仓库：<https://github.com/jonatl5/jonatl5.github.io>
-- 发布设置：<https://github.com/jonatl5/jonatl5.github.io/settings/pages>
+以展览图录为视觉线索的中文个人网站，包含六个代表项目、可展开的案例详情、工作方式、个人介绍、教育与工作经历、研究成果、联系方式，以及原版简历与作品集下载。
 
-## 当前内容
+## 内容与文件
 
-目前是一个可直接访问的占位首页，尚未添加正式简历。
-页面支持手机和电脑，无需安装依赖或运行构建工具。
+- `index.html`：首页内容、经历、联系及下载区。
+- `styles.css`：蓝白视觉、桌面与手机布局、项目弹窗样式。
+- `app.js`：六个项目的详细内容、项目弹窗与微信复制功能。
+- `assets/images/`：从个人作品集提取并优化的图片，来源见 `ASSETS.md`。
+- `assets/documents/`：原版简历与完整作品集 PDF。
+- `.nojekyll`：让 GitHub Pages 直接发布静态网页。
 
-## 文件说明
+## 维护
 
-| 文件 | 用途 |
-| --- | --- |
-| `index.html` | 首页内容，后续可替换成正式简历 |
-| `styles.css` | 页面样式 |
-| `.nojekyll` | 让 GitHub Pages 直接发布静态文件 |
+修改首页文字时编辑 `index.html`；修改项目详情时编辑 `app.js` 中的 `projects`。替换 PDF 时保留原文件名，下载链接即可继续使用。新增图片应使用相对路径并提供有意义的替代文字。
 
-## 更新网站
+无需安装依赖或构建。本地可使用任意静态文件服务器预览，也可以双击 `index.html` 查看（微信复制需 HTTPS 或 localhost 环境）。
 
-1. 编辑 `index.html` 和 `styles.css`，本地双击 `index.html` 即可预览。
-2. 将修改提交并推送到 `main` 分支，也可以直接在 GitHub 网页编辑并提交。
-3. GitHub Pages 会自动更新网站；发布进度可在仓库的 **Actions** 页面查看。
+提交到 `main` 后，GitHub Pages 自动发布。设置为 **Deploy from a branch → main → / (root)**，发布记录见仓库 Actions。
 
-发布来源是 **Settings → Pages → Deploy from a branch → main → / (root)**。
-
-## 后续放入简历
-
-可以在首页逐步加入个人介绍、教育经历、工作或研究经历、项目、技能和联系方式。
-如需提供 PDF 下载，将文件放到 `assets/resume.pdf`，然后在首页添加下载链接。
-目前没有加入个人经历或 PDF 下载按钮，正式内容可在准备好后补充。
+项目详情支持键盘打开、Esc 关闭、焦点管理和浏览器前进/后退，也可通过 `#project-guangdong` 等链接直接访问。页面尊重系统的“减少动态效果”设置。

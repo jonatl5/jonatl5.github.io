@@ -1,24 +1,91 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="jonatl5 的个人主页，简历与项目介绍即将上线。">
-    <meta name="theme-color" content="#f6f5f0">
-    <title>jonatl5 · 个人主页</title>
-    <link rel="canonical" href="https://jonatl5.github.io/">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main>
-      <p class="eyebrow">Personal website</p>
-      <!-- 准备好正式简历后，在这里加入个人介绍、经历和项目。 -->
-      <h1>jonatl5<span aria-hidden="true">.</span></h1>
-      <p class="intro">简历与项目介绍正在整理中。</p>
-      <a class="profile-link" href="https://github.com/jonatl5">
-        访问 GitHub <span aria-hidden="true">↗</span>
-      </a>
-    </main>
-    <footer>© 2026 jonatl5</footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9fb">
+  <meta name="description" content="田朵朵，中央美术学院本硕。专注展陈策划、数字文化与内容运营，让文化研究成为可感知的空间与体验。">
+  <title>田朵朵 Duoduo Tian — 展陈策划与数字文化</title>
+  <link rel="canonical" href="https://jonatl5.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%232b47ed'/%3E%3Cpath d='M16 16h32v32H16zm16 0v32M16 32h32' fill='none' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/images/museum-gallery.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="田朵朵，返回首页"><span class="brand-mark" aria-hidden="true">田</span><span>田朵朵 <small>DUODUO TIAN</small></span></a>
+    <nav aria-label="主导航"><a href="#work">作品 <span>01</span></a><a href="#about">关于 <span>02</span></a><a href="#resume">履历 <span>03</span></a><a class="nav-contact" href="#contact">聊聊合作 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">CULTURE · SPACE · EXPERIENCE</p>
+        <h1 id="hero-title">让文化，<br>在空间里<span>发生。</span></h1>
+        <div class="hero-intro"><span class="short-rule" aria-hidden="true"></span><p>我是田朵朵，一名从艺术研究出发的策划人。以内容连接空间、科技与人，把一个想法，推进成一场真实的体验。</p></div>
+        <a class="text-link hero-link" href="#work">探索我的作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-exhibit">
+        <div class="exhibit-topline"><span>田朵朵 / 个人作品选</span><span>EXHIBITION NO. 01</span></div>
+        <figure class="hero-photo"><img src="assets/images/museum-gallery.webp" width="1800" height="944" alt="广东省气象局史馆，历史展陈与多媒体装置共同构成叙事空间" fetchpriority="high"><figcaption><span>广东省气象局史馆</span><span>展陈策划 · 项目统筹</span></figcaption></figure>
+        <figure class="floating-work"><img src="assets/images/dream-poster.webp" width="749" height="1123" alt="独立策展作品《梦境日记》海报"><figcaption>从研究，到展览。</figcaption></figure>
+        <div class="exhibit-note"><span>策划的起点是好奇，<br>终点是人与内容的相遇。</span></div>
+      </div>
+    </section>
+    <div class="identity-strip section-shell"><span>中央美术学院 · 本科 / 硕士</span><span>展陈策划 / 数字互动 / 内容运营</span><a href="#work">向下，进入作品 <span aria-hidden="true">↓</span></a></div>
+    <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><p class="section-index">01 / SELECTED WORK</p><div><h2 id="work-title">让想法，有迹可循。</h2><p>从史馆到数字岛屿，从学术文本到观众体验。</p></div><span class="work-count">6 个代表项目</span></div>
+      <div class="projects-grid">
+        <button class="project-card" data-project="guangdong" aria-haspopup="dialog"><span class="project-image"><img src="assets/images/museum-space.webp" width="1706" height="1121" alt="广东省气象局史馆展厅现场" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>01 / EXHIBITION</span><span>全流程策划 · 运营统筹</span></span><span class="project-title">广东省气象局史馆</span><span class="project-description">让气象历史，从档案走入空间。</span></button>
+        <button class="project-card project-offset" data-project="hebei" aria-haspopup="dialog"><span class="project-image digital-cover"><img src="assets/images/digital-island.webp" width="1800" height="994" alt="河北数字科普馆的气象主题三维游戏岛屿" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>02 / DIGITAL EXPERIENCE</span><span>数字策划 · 游戏交互</span></span><span class="project-title">河北省气象网络数字科普馆</span><span class="project-description">把气象知识，变成可以探索的世界。</span></button>
+        <button class="project-card" data-project="dream" aria-haspopup="dialog"><span class="project-image dream-cover"><img src="assets/images/dream-booklet.webp" width="1800" height="1269" alt="《梦境日记》独立策展项目的导览手册设计" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>03 / INDEPENDENT CURATION</span><span>独立策展 · 视觉与空间</span></span><span class="project-title">梦境日记：控梦人的 18 个梦</span><span class="project-description">一场从叙事、视觉到空间的独立策展实践。</span></button>
+        <button class="project-card project-offset" data-project="century" aria-haspopup="dialog"><span class="project-image"><img src="assets/images/century-workshop.webp" width="591" height="384" alt="《百年无极》展览期间的艺术导览与公众活动" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>04 / ART & PUBLIC ENGAGEMENT</span><span>内容策划 · 公众教育</span></span><span class="project-title">百年无极 · 北京中华世纪坛</span><span class="project-description">在艺术史的深度与公众的理解之间，搭一座桥。</span></button>
+        <button class="project-card" data-project="ningbo" aria-haspopup="dialog"><span class="project-image"><img src="assets/images/ningbo-research.webp" width="1500" height="1125" alt="宁波河海博物馆前期研究与研学项目交流现场" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>05 / RESEARCH & EDUCATION</span><span>前期筹备 · 文旅研学</span></span><span class="project-title">宁波河海博物馆</span><span class="project-description">沿着河海文明，寻找一座博物馆的起点。</span></button>
+        <button class="project-card project-offset" data-project="christies" aria-haspopup="dialog"><span class="project-image"><img src="assets/images/christies-exhibition.webp" width="1374" height="970" alt="佳士得艺术展览现场" loading="lazy"><span class="project-visit">查看项目 <span aria-hidden="true">↗</span></span></span><span class="project-meta"><span>06 / ART COMMUNICATION</span><span>公关传播 · 活动执行</span></span><span class="project-title">佳士得 · 艺术传播</span><span class="project-description">让专业艺术内容，抵达更广阔的公众。</span></button>
+      </div>
+      <div class="work-footer"><p>更多展陈、手绘、影视分镜与运营实践，收录于完整作品集。</p><a class="text-link" href="assets/documents/tianduoduo-portfolio.pdf" download="田朵朵-作品集.pdf">下载完整作品集 <span aria-hidden="true">↓</span></a></div>
+      <noscript><p class="noscript-note">项目详情需要启用 JavaScript，也可以直接下载完整作品集查看全部内容。</p></noscript>
+    </section>
+    <section class="practice-section" aria-labelledby="practice-title"><div class="practice-grid section-shell">
+      <div class="practice-intro"><p class="section-index">MY PRACTICE / 我的工作方式</p><h2 id="practice-title">从纸上想法，<br>到真实现场。</h2><p>从调研的第一条线索，到开放后的每一次体验，把内容、设计、技术与执行接起来。</p><div class="practice-stat"><strong>12</strong><span>个展馆、园区、影院<br>及数字平台项目参与经验</span></div></div>
+      <div class="capabilities">
+        <details open><summary><span>01</span><h3>研究与策划</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary><div><p>艺术史与文化遗产研究、案例调研、场馆定位、展览大纲与展陈文字。把复杂材料梳理成清楚的叙事线索。</p><span class="capability-note">调研分析 / 展陈叙事 / 学术写作</span></div></details>
+        <details><summary><span>02</span><h3>数字体验与视觉表达</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary><div><p>游戏世界观与交互脚本、影视分镜、IP 形象、场景手绘及 UI 草图。用文字、图像和交互，把想法变得可见、可体验。</p><span class="capability-note">游戏策划 / 多媒体脚本 / 手绘与平面设计</span></div></details>
+        <details><summary><span>03</span><h3>项目统筹与落地</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary><div><p>从客户沟通、方案汇报，到招投标、合同、采购与供应商对接；协调内容、技术与执行环节，跟进质量、预算和交付。</p><span class="capability-note">商务沟通 / 成本控制 / 跨团队协作</span></div></details>
+        <details><summary><span>04</span><h3>内容运营与公众连接</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary><div><p>美育活动与研学路线开发、线上线下活动执行、新媒体矩阵运营与艺术公关。让场馆开幕之后，内容仍能持续生长。</p><span class="capability-note">美育研学 / 活动策划 / 品牌与新媒体</span></div></details>
+      </div>
+    </div></section>
+    <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-layout"><div class="about-copy"><p class="section-index">02 / ABOUT ME</p><h2 id="about-title">研究给我深度，<br>创作让我保持好奇。</h2><p class="about-lead">你好，我是田朵朵。</p><p class="about-text">七年央美学习经历，让我习惯从文化与艺术史中寻找线索。项目实践则让我不断思考：如何把这些线索，变成公众愿意走近的内容与体验。</p><p class="about-text">我的工作跨越展陈策划、数字互动、文旅研学与艺术传播。在策划之外，我也画画、做插画、带领艺术工作坊——保持观察，也保持动手创作的习惯。</p><div class="education"><div><span>2022 — 2025</span><h3>中央美术学院 <small>硕士 · 艺术学理论</small></h3><p>连续三年研究生全额奖学金<br>王式廓吴咸奖学金一等奖 · 成绩前 5%</p></div><div><span>2018 — 2022</span><h3>中央美术学院 <small>本科 · 艺术史论</small></h3><p>北京市优秀毕业生 · 优秀毕业论文奖<br>央美科研之星 · 研究生推免 · 成绩前 5%</p></div></div><p class="tools-line"><span>工具与语言</span>Office / Illustrator / Premiere / 手绘与板绘 / IELTS 7.0</p></div>
+      <figure class="portrait"><img src="assets/images/portrait.webp" width="750" height="1125" alt="田朵朵个人肖像" loading="lazy"><figcaption><span>田朵朵<br><small>DUODUO TIAN</small></span><span>以文化为起点，<br>向真实的体验出发。</span></figcaption></figure></div>
+    </section>
+    <section class="resume-section section-shell" id="resume" aria-labelledby="resume-title">
+      <div class="section-heading"><p class="section-index">03 / EXPERIENCE</p><div><h2 id="resume-title">在不同现场，积累同一种能力。</h2><p>把文化内容转化为可以执行、传播与体验的项目。</p></div><a class="text-link" href="assets/documents/tianduoduo-resume.pdf" download="田朵朵-简历.pdf">下载简历 <span aria-hidden="true">↓</span></a></div>
+      <div class="timeline">
+        <article class="experience"><p class="experience-date">2025.04 — 至今</p><div><h3>中国气象局华风气象传媒集团</h3><p class="experience-role">策划 / 项目经理 / 设计辅助</p><p>全程跟进气象科普展馆、史志馆、主题园区、4D 影院与线上数字平台等 12 个项目。统筹商务、策划与供应商协作，完成展馆、视频、游戏策划及分镜、IP 与交互流程设计，跟进落地执行。</p></div></article>
+        <article class="experience"><p class="experience-date">2024.12 — 2025.02</p><div><h3>南方出版传媒总部</h3><p class="experience-role">图书选题策划 / 活动策划 / 新媒体运营</p><p>参与图书选题与作家约稿，编辑官方社交媒体内容，维护媒体与 KOL 关系，联合文化场馆、书店开展新书发布活动。</p></div></article>
+        <article class="experience"><p class="experience-date">2023.08 — 2024.05</p><div><h3>宁波博物馆</h3><p class="experience-role">展陈策划 / 文旅 IP 策划</p><p>参与宁波河海博物馆新馆前期研究，完成场馆功能定位、同类型馆调研与展览结构大纲；提出文旅 IP 项目并获得资金支持。</p></div></article>
+        <article class="experience"><p class="experience-date">2023.05 — 2023.07</p><div><h3>佳士得 Christie’s</h3><p class="experience-role">公关专员</p><p>撰写展览活动新闻稿与发言稿，参与媒体见面会、藏家活动及艺术传播，开展媒体关系维护与舆情监测。</p></div></article>
+      </div>
+      <details class="more-experience"><summary>更多展览、教育与跨领域实践 <span aria-hidden="true">+</span></summary><div class="extra-experiences">
+        <article><span>2025.02</span><div><h3>广东省博物馆</h3><p>策展人 · 参与《布列塔尼之光：坎佩尔美术馆藏品》展览大纲、50 余件艺术品解读与展览上墙文字撰写。</p></div></article>
+        <article><span>2024.08 — 10</span><div><h3>出走世界义工跨国旅行</h3><p>产品运营 · 与全国 40 余所高校建立市场商务合作，参与市场与竞品调研，经手项目销售额 40 万元以上。</p></div></article>
+        <article><span>2024.06 — 08</span><div><h3>美国 Camp Ballibay 暑校</h3><p>艺术部主任老师 · 面向美国青少年教授中国艺术，组织中国青少年赴美开展为期三周的调研活动。</p></div></article>
+        <article><span>2024.03 — 05</span><div><h3>台湾诚品画廊</h3><p>展览专员 / 活动策划 / 新媒体运营 · 参与展陈、开幕式、讲座与研讨会，运营微博与小红书官方账号。</p></div></article>
+        <article><span>2023.10 — 12</span><div><h3>宁波华茂艺术教育博物馆</h3><p>展陈与活动策划 · 馆藏学术研究、美育讲座、艺术工作坊及文创销售内容策划。</p></div></article>
+        <article><span>2023.02 — 04</span><div><h3>凤凰汉竹图书（北京）有限公司</h3><p>插画师 · 为艺术科普书籍绘制 30 余幅插画，协作完成封面与内页视觉设计。</p></div></article>
+        <article><span>2022.10 — 12</span><div><h3>北京中华世纪坛</h3><p>策展人 · 参与《百年无极》展览大纲、艺术品解读、观展活动与宣讲导览。</p></div></article>
+        <article><span>2021 — 2022</span><div><h3>中央美术学院美术馆</h3><p>展厅全案策划 · 独立策办《梦境日记：控梦人的 18 个梦》，完成策划、视觉与空间呈现。</p></div></article>
+        <article><span>2021.10 — 12</span><div><h3>字节跳动（抖音）校企工作坊</h3><p>游戏策划师 · 策划古建筑解密游戏卡整体故事脚本，获工作坊比赛一等奖。</p></div></article>
+        <article><span>项目实践</span><div><h3>中国嘉德拍卖</h3><p>学术研究 / 媒体传播 · 参与藏品学术文章、微信公众号内容与拍卖图录美术编辑。</p></div></article>
+      </div></details>
+      <div class="research-block"><div><p class="section-index">RESEARCH / 研究与写作</p><p>策划之外，<br>持续追问文化的意义。</p></div><ol><li><span>2025</span><p>《温柔的野心：安格尔〈朱庇特与忒提斯〉的双重叙事》<small>发表于《跨文化美术史年鉴》</small></p></li><li><span>2024</span><p>《文旅融合背景下艺术对地方文化产业的驱动效应研究》<small>宁波博物馆学术研讨会 · 收录会议论文集</small></p></li><li><span>2023</span><p>《数字化技术在浙江传统建筑文化遗产保护中的创新应用与挑战》<small>浙江大学文化遗产保护研讨会 · 收录会议论文集</small></p></li></ol></div>
+    </section>
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title"><div class="contact-layout"><div><p class="section-index">04 / LET’S CONNECT</p><h2 id="contact-title">下一个故事，<br>一起开始。</h2><p class="contact-intro">展陈策划、数字文化、文旅与艺术内容，<br>欢迎聊聊新的机会与合作。</p><a class="contact-email" href="mailto:tianduoduo2019@qq.com">tianduoduo2019@qq.com <span aria-hidden="true">↗</span></a><div class="contact-methods"><button class="copy-contact" type="button" data-copy="CokeZerogirl" aria-label="复制微信号 CokeZerogirl"><span>WECHAT</span>CokeZerogirl <span class="copy-label">复制 ↗</span></button><a href="tel:+8613736029973"><span>PHONE</span>137 3602 9973</a></div></div><div class="downloads"><p class="section-index">TAKE A CLOSER LOOK / 带走一份</p><a href="assets/documents/tianduoduo-resume.pdf" download="田朵朵-简历.pdf"><span class="download-number">01</span><span><strong>个人简历</strong><small>RESUME · PDF · 1 页</small></span><span aria-hidden="true">↓</span></a><a href="assets/documents/tianduoduo-portfolio.pdf" download="田朵朵-作品集.pdf"><span class="download-number">02</span><span><strong>完整作品集</strong><small>PORTFOLIO · PDF · 27 页</small></span><span aria-hidden="true">↓</span></a></div></div></section>
+  </main>
+  <footer class="site-footer section-shell"><span>© 2026 田朵朵 · Duoduo Tian</span><span>内容与项目图片来自个人简历与作品集</span><a href="#top">回到开场 ↑</a></footer>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-bar"><span id="dialog-label">PROJECT NOTES</span><button class="dialog-close" type="button" aria-label="关闭项目详情" autofocus>关闭 <span aria-hidden="true">×</span></button></div><div id="project-content"></div></dialog>
+  <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+</body>
 </html>
